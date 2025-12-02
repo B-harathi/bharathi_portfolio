@@ -124,6 +124,71 @@ export const projectsData = [
       "/images/projects/netflix-player.jpg",
       "/images/projects/netflix-browse.jpg"
     ]
+  },
+  {
+    id: 3,
+    title: "HyreDragon",
+    subtitle: "HR Hiring Platform",
+    description: "HyreDragon is a comprehensive hiring platform designed for HR professionals and managers to streamline the recruitment process. The platform enables efficient candidate management, job posting, interview scheduling, and collaborative hiring decisions, making the entire recruitment workflow seamless and organized.",
+    longDescription: "A powerful recruitment management system built to modernize the hiring process for organizations of all sizes. HyreDragon provides end-to-end hiring solutions from job posting to candidate onboarding, with features for multi-stage interview tracking, team collaboration, and data-driven hiring insights.",
+    image: "/images/projects/hyredragon.jpg",
+    category: "Full Stack Web Application",
+    status: "In Development",
+    startDate: "October 2024",
+    endDate: "Present",
+    duration: "2+ months",
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Material-UI",
+      "JavaScript",
+      "RESTful APIs",
+      "JWT Authentication",
+      "Mongoose",
+      "Redux"
+    ],
+    features: [
+      "Job posting and management with customizable templates",
+      "Candidate tracking system with application status pipeline",
+      "Interview scheduling with calendar integration",
+      "Resume parsing and candidate profile management",
+      "Role-based access for HR, managers, and interviewers",
+      "Collaborative hiring with team feedback and ratings",
+      "Automated email notifications for candidates",
+      "Advanced candidate search and filtering",
+      "Hiring analytics and reporting dashboard",
+      "Mobile-responsive design for on-the-go recruitment"
+    ],
+    challenges: [
+      "Designing a flexible workflow for different hiring processes",
+      "Implementing secure role-based access for multiple user types",
+      "Building efficient candidate search across large datasets",
+      "Creating an intuitive interface for non-technical HR users"
+    ],
+    solutions: [
+      "Developed customizable pipeline stages with drag-and-drop functionality",
+      "Implemented comprehensive RBAC with JWT and middleware validation",
+      "Added MongoDB indexing and optimized queries for fast search",
+      "Conducted user research and iterative UI/UX improvements"
+    ],
+    achievements: [
+      "Reduced hiring cycle time by 40% with streamlined workflows",
+      "Enabled collaborative decision-making with team feedback features",
+      "Successfully handled 1000+ candidate profiles with optimized performance",
+      "Achieved 95% user satisfaction score from HR teams during testing"
+    ],
+    links: {
+      live: "https://hyredragon.vercel.app",
+      github: "https://github.com/B-harathi/hyredragon",
+      demo: "https://hyredragon.vercel.app"
+    },
+    gallery: [
+      "/images/projects/hyredragon-dashboard.jpg",
+      "/images/projects/hyredragon-candidates.jpg",
+      "/images/projects/hyredragon-jobs.jpg"
+    ]
   }
 ];
 
