@@ -21,10 +21,10 @@ const ProjectsGrid = ({ preview = false }) => {
         switch (filterValue) {
           case 'full-stack':
             return project.category.includes('Full Stack');
-          case 'frontend':
-            return project.category.includes('Frontend');
-          case 'web-app':
-            return project.category.includes('Web Application');
+          case 'completed':
+            return project.status === 'Completed';
+          case 'in-dev':
+            return project.status === 'In Development';
           default:
             return true;
         }

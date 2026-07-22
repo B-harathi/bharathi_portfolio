@@ -134,20 +134,22 @@ const SkillsSection = ({ preview = false }) => {
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
               {[
                 { name: 'React.js', icon: 'FaReact' },
+                { name: 'Next.js', icon: 'TbBrandNextjs' },
                 { name: 'Node.js', icon: 'FaNodeJs' },
+                { name: 'NestJS', icon: 'SiNestjs' },
+                { name: 'Express.js', icon: 'SiExpress' },
+                { name: 'TypeScript', icon: 'SiTypescript' },
                 { name: 'JavaScript', icon: 'FaJs' },
                 { name: 'MongoDB', icon: 'SiMongodb' },
-                { name: 'Express.js', icon: 'SiExpress' },
-                { name: 'HTML5', icon: 'FaHtml5' },
-                { name: 'CSS3', icon: 'FaCss3Alt' },
-                { name: 'Git', icon: 'FaGitAlt' },
-                { name: 'VS Code', icon: 'SiVisualstudiocode' },
-                { name: 'Postman', icon: 'SiPostman' },
+                { name: 'PostgreSQL', icon: 'SiPostgresql' },
+                { name: 'Prisma', icon: 'SiPrisma' },
+                { name: 'Docker', icon: 'FaDocker' },
+                { name: 'Python', icon: 'FaCode' },
+                { name: 'Socket.IO', icon: 'SiSocketdotio' },
                 { name: 'Material-UI', icon: 'SiMui' },
-                { name: 'Next.js', icon: 'TbBrandNextjs' },
                 { name: 'Ant Design', icon: 'SiAntdesign' },
-                // { name: 'Tailwind CSS', icon: 'SiTailwindcss' },
-                { name: 'npm', icon: 'FaCode' },
+                { name: 'Git', icon: 'FaGitAlt' },
+                { name: 'Postman', icon: 'SiPostman' },
                 { name: 'REST APIs', icon: 'MdApi' }
               ].map((tech, index) => (
                 <div

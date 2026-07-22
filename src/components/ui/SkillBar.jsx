@@ -6,6 +6,7 @@ const SkillBar = ({ skill, delay = 0 }) => {
   const skillRef = useRef(null);
 
   useEffect(() => {
+    const currentRef = skillRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -15,13 +16,13 @@ const SkillBar = ({ skill, delay = 0 }) => {
       { threshold: 0.1 }
     );
 
-    if (skillRef.current) {
-      observer.observe(skillRef.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (skillRef.current) {
-        observer.unobserve(skillRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);

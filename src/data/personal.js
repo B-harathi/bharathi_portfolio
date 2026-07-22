@@ -1,18 +1,18 @@
 export const personalInfo = {
-  name: "Bharathi G",
-  title: "Junior Software Associate",
-  subtitle: "MERN Stack Developer",
-  email: "gbharathis2003@gmail.com",
+  name: "Bharathi",
+  title: "Software Developer",
+  subtitle: "Full Stack Developer",
+  email: "gbharathitrs@gmail.com",
   phone: "7019034417",
   location: "Coimbatore, India",
   linkedin: "http://linkedin.com/in/gbharathi",
-  github: "https://github.com/B-harathi", // Add actual GitHub if available
-  resume: "resume/Bharathi-G-Resume.jpg",
+  github: "https://github.com/B-harathi",
+  resume: "/resume/Bharathi_Resume.md",
   
   bio: {
-    short: "Motivated developer with 1 year of experience delivering scalable solutions in Agile teams. Skilled in Scrum, strong technical abilities, and known for flexibility, innovation, and high-quality contributions.",
-    long: "I'm a passionate MERN Stack Developer with 1 year of hands-on experience in building scalable web applications. My journey in software development is driven by curiosity and a commitment to creating innovative solutions that make a difference. I thrive in collaborative environments and have a strong foundation in Agile methodologies, particularly Scrum.",
-    passion: "I love turning complex problems into simple, beautiful, and intuitive solutions. When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or learning about the latest trends in web development."
+    short: "Full-stack developer with 1+ year of experience in fintech and billing systems using React, Next.js, Node.js, Express, and MongoDB. Delivered real-time features and REST API integrations in Agile environments.",
+    long: "I'm a full-stack developer with 1+ year of experience building scalable web applications in fintech and billing systems. My expertise spans React, Next.js, Node.js, Express, and MongoDB, with growing skills in NestJS, PostgreSQL, and Docker. I'm focused on clean architecture and production-ready code.",
+    passion: "I love turning complex problems into simple, beautiful, and intuitive solutions. When I'm not coding, you'll find me exploring new technologies, expanding into NestJS and PostgreSQL, or learning about the latest trends in fintech and billing systems."
   },
 
   education: [
@@ -95,7 +95,7 @@ export const personalInfo = {
     },
     {
       name: "Email",
-      url: "mailto:gbharathis2003@gmail.com",
+      url: "mailto:gbharathitrs@gmail.com",
       icon: "FaEnvelope"
     },
     {

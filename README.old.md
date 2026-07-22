@@ -1,2 +1,0 @@
-# bharathi_portfolio
-

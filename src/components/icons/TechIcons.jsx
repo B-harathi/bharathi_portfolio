@@ -9,7 +9,9 @@ import {
   FaDatabase,
   FaServer,
   FaTools,
-  FaCode
+  FaCode,
+  FaDocker,
+  FaGithub
 } from 'react-icons/fa';
 import { 
   SiMongodb, 
@@ -19,7 +21,12 @@ import {
   SiMui, 
   SiAntdesign,
   SiNextdotjs,
-  SiTailwindcss
+  SiTailwindcss,
+  SiTypescript,
+  SiSocketdotio,
+  SiNestjs,
+  SiPostgresql,
+  SiPrisma
 } from 'react-icons/si';
 import { 
   MdDesignServices, 
@@ -58,6 +65,15 @@ const TechIcon = ({ iconName, size = "w-8 h-8", color, className = "" }) => {
     FaGitAlt: <FaGitAlt {...iconProps} />,
     SiVisualstudiocode: <SiVisualstudiocode {...iconProps} />,
     SiPostman: <SiPostman {...iconProps} />,
+    FaDocker: <FaDocker {...iconProps} />,
+    FaGithub: <FaGithub {...iconProps} />,
+
+    // New technical skills
+    SiTypescript: <SiTypescript {...iconProps} />,
+    SiSocketdotio: <SiSocketdotio {...iconProps} />,
+    SiNestjs: <SiNestjs {...iconProps} />,
+    SiPostgresql: <SiPostgresql {...iconProps} />,
+    SiPrisma: <SiPrisma {...iconProps} />,
 
     // Categories
     MdDesignServices: <MdDesignServices {...iconProps} />,
@@ -94,21 +110,26 @@ export const techStackData = {
   'Git': { icon: 'FaGitAlt', color: '#F05032', name: 'Git' },
   'VS Code': { icon: 'SiVisualstudiocode', color: '#007ACC', name: 'VS Code' },
   'Postman': { icon: 'SiPostman', color: '#FF6C37', name: 'Postman' },
+  'Docker': { icon: 'FaDocker', color: '#2496ED', name: 'Docker' },
+  'GitHub Copilot': { icon: 'FaGithub', color: '#4078C0', name: 'GitHub Copilot' },
+
+  // New technical skills
+  'TypeScript': { icon: 'SiTypescript', color: '#3178C6', name: 'TypeScript' },
+  'Socket.IO': { icon: 'SiSocketdotio', color: '#010101', name: 'Socket.IO' },
+  'NestJS': { icon: 'SiNestjs', color: '#E0234E', name: 'NestJS' },
+  'PostgreSQL': { icon: 'SiPostgresql', color: '#336791', name: 'PostgreSQL' },
+  'Prisma ORM': { icon: 'SiPrisma', color: '#2D3748', name: 'Prisma ORM' },
+  'Prisma': { icon: 'SiPrisma', color: '#2D3748', name: 'Prisma' },
 
   // Legacy names for backward compatibility
   React: { icon: 'FaReact', color: '#61DAFB', name: 'React.js' },
   NodeJS: { icon: 'FaNodeJs', color: '#339933', name: 'Node.js' },
-  JavaScript: { icon: 'FaJs', color: '#F7DF1E', name: 'JavaScript' },
-  MongoDB: { icon: 'SiMongodb', color: '#47A248', name: 'MongoDB' },
   Express: { icon: 'SiExpress', color: '#000000', name: 'Express.js' },
-  HTML5: { icon: 'FaHtml5', color: '#E34F26', name: 'HTML5' },
-  CSS3: { icon: 'FaCss3Alt', color: '#1572B6', name: 'CSS3' },
-  Git: { icon: 'FaGitAlt', color: '#F05032', name: 'Git' },
   VSCode: { icon: 'SiVisualstudiocode', color: '#007ACC', name: 'VS Code' },
-  Postman: { icon: 'SiPostman', color: '#FF6C37', name: 'Postman' },
   MaterialUI: { icon: 'SiMui', color: '#007FFF', name: 'Material-UI' },
   NextJS: { icon: 'TbBrandNextjs', color: '#000000', name: 'Next.js' },
   Tailwind: { icon: 'SiTailwindcss', color: '#06B6D4', name: 'Tailwind CSS' },
+  SocketIO: { icon: 'SiSocketdotio', color: '#010101', name: 'Socket.IO' },
 
   // Categories
   Frontend: { icon: 'MdDesignServices', color: '#3B82F6', name: 'Frontend' },

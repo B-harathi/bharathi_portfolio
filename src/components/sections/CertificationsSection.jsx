@@ -5,11 +5,6 @@ import SectionHeading from '../ui/SectionHeading';
 import TechIcon from '../icons/TechIcons';
 
 const CertificationsSection = () => {
-  const handleCertificateDownload = (certificateUrl, title) => {
-    // In a real implementation, this would download the actual certificate
-    // alert(`Downloading certificate: ${title}`);
-  };
-
   const handleVerification = (verificationUrl) => {
     window.open(verificationUrl, '_blank', 'noopener,noreferrer');
   };

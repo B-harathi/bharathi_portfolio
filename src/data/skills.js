@@ -51,6 +51,20 @@ export const skillsData = {
           icon: "SiAntdesign",
           color: "#1890FF",
           description: "Enterprise-class UI design language and components"
+        },
+        {
+          name: "TypeScript",
+          level: 75,
+          icon: "SiTypescript",
+          color: "#3178C6",
+          description: "Type-safe JavaScript with interfaces, generics, and modern tooling"
+        },
+        {
+          name: "Socket.IO",
+          level: 65,
+          icon: "SiSocketdotio",
+          color: "#010101",
+          description: "Real-time bidirectional event-based communication"
         }
       ]
     },
@@ -77,6 +91,27 @@ export const skillsData = {
           icon: "SiMongodb",
           color: "#47A248",
           description: "NoSQL database design, queries, and data modeling"
+        },
+        {
+          name: "NestJS",
+          level: 70,
+          icon: "SiNestjs",
+          color: "#E0234E",
+          description: "Progressive Node.js framework for building efficient server-side applications"
+        },
+        {
+          name: "PostgreSQL",
+          level: 68,
+          icon: "SiPostgresql",
+          color: "#336791",
+          description: "Relational database with advanced querying and indexing capabilities"
+        },
+        {
+          name: "Prisma ORM",
+          level: 65,
+          icon: "SiPrisma",
+          color: "#2D3748",
+          description: "Next-generation ORM for Node.js and TypeScript with type-safe queries"
         }
       ]
     },
@@ -103,6 +138,20 @@ export const skillsData = {
           icon: "SiPostman",
           color: "#FF6C37",
           description: "API testing, documentation, and development workflow"
+        },
+        {
+          name: "Docker",
+          level: 72,
+          icon: "FaDocker",
+          color: "#2496ED",
+          description: "Containerization for consistent development and production environments"
+        },
+        {
+          name: "GitHub Copilot",
+          level: 82,
+          icon: "FaGithub",
+          color: "#4078C0",
+          description: "AI-assisted development with prompt engineering and code generation"
         }
       ]
     },
@@ -129,6 +178,20 @@ export const skillsData = {
           icon: "MdApi",
           color: "#4ECDC4",
           description: "API design, integration, and third-party service consumption"
+        },
+        {
+          name: "CI/CD",
+          level: 70,
+          icon: "MdApi",
+          color: "#00D2FF",
+          description: "Continuous integration and deployment pipelines"
+        },
+        {
+          name: "Prompt Engineering",
+          level: 78,
+          icon: "MdApi",
+          color: "#8B5CF6",
+          description: "Optimizing AI-assisted development with effective prompts"
         }
       ]
     }

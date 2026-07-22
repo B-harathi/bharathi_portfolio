@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt, FaAward, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { experienceData, careerStats } from '../../data/experience';
 import SectionHeading from '../ui/SectionHeading';
-import { TechIconsShowcase } from '../icons/TechIcons';
 
 const ExperienceTimeline = ({ preview = false }) => {
   const [expandedExperience, setExpandedExperience] = useState(null);

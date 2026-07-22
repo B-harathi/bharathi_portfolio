@@ -1,16 +1,16 @@
 export const projectsData = [
   {
     id: 1,
-    title: "BizBooks",
-    subtitle: "Accounting Management Platform",
-    description: "BizBooks is a Zoho Books-inspired accounting tool designed to manage payables, receivables, invoices, and expenses. The platform streamlines business finances with automated invoicing, billing, and real-time expense management, simplifying bookkeeping and ensuring accurate financial reporting for small and medium enterprises.",
+    title: "Accounting Tool",
+    subtitle: "SME Accounting Management Platform",
+    description: "Designed and developed a full-stack accounting solution for SMEs featuring invoicing, quote and bill generation, expense tracking, customer-wise usage monitoring, and financial reporting. Built using React.js, Node.js, Express.js, and MongoDB.",
     longDescription: "A comprehensive accounting solution built for SMEs that need efficient financial management. The platform offers complete invoice management, expense tracking, and financial reporting capabilities with an intuitive user interface.",
     image: "/images/projects/bizbooks.jpg",
     category: "Full Stack Web Application",
-    status: "In Development",
-    startDate: "September 2024",
-    endDate: "Present",
-    duration: "4+ months",
+    status: "Completed",
+    startDate: "August 2024",
+    endDate: "May 2025",
+    duration: "10 months",
     technologies: [
       "React.js",
       "Node.js",
@@ -20,15 +20,15 @@ export const projectsData = [
       "JavaScript",
       "RESTful APIs",
       "JWT Authentication",
-      "Mongoose"    ],
+      "Mongoose"
+    ],
     features: [
       "Complete invoice management system with automated generation",
       "Real-time expense tracking and categorization",
       "Comprehensive financial reporting and analytics dashboard",
-      "Multi-currency support for international transactions",
+      "Quote and bill generation for clients",
+      "Customer-wise usage monitoring",
       "Role-based access control for team collaboration",
-      "Automated payment reminders and follow-ups",
-      "Integration with popular payment gateways",
       "Tax calculation and compliance features",
       "Data export capabilities (PDF, Excel, CSV)",
       "Mobile-responsive design for on-the-go access"
@@ -52,7 +52,7 @@ export const projectsData = [
       "Successfully handled concurrent users with optimized database queries"
     ],
     links: {
-      live: "https://bizbooks-demo.vercel.app", // Add actual links
+      live: "https://bizbooks-demo.vercel.app",
       github: "https://github.com/B-harathi/bizbooks",
       demo: "https://bizbooks-demo.vercel.app"
     },
@@ -64,131 +64,117 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "Netflix Clone",
-    subtitle: "Streaming Platform Interface",
-    description: "Developed a feature-rich Netflix clone application using React and modern frontend technologies to emulate the popular streaming platform's user interface and functionality. Implemented components for video playback, browse recommendations, user authentication, and interactive controls, delivering an engaging and responsive user experience.",
-    longDescription: "A complete recreation of Netflix's user interface with modern React patterns, featuring dynamic content loading, user authentication, video streaming capabilities, and responsive design that works seamlessly across all devices.",
-    image: "/images/projects/netflix-clone.jpg",
-    category: "Frontend Web Application",
-    status: "Completed",
-    startDate: "January 2024",
-    endDate: "May 2024",
-    duration: "5 months",
-    technologies: [
-      "React.js",
-      "JavaScript",
-      "HTML5",
-      "CSS3",
-      "React Router",
-      "Axios",
-      "React Hooks",
-      "Responsive Design"
-    ],
-    features: [
-      "User authentication and profile management system",
-      "Dynamic movie and TV show browsing with categories",
-      "Advanced search functionality with filters",
-      "Responsive video player with custom controls",
-      "Personalized watchlist and favorites system",
-      "Movie recommendations based on viewing history",
-      "Multi-device responsive design",
-      "Loading states and error handling",
-      "Infinite scrolling for content discovery",
-      "Dark theme with Netflix-inspired UI/UX"
-    ],
-    challenges: [
-      "Implementing smooth video streaming with custom controls",
-      "Managing complex state for user preferences and watchlists",
-      "Optimizing performance for large content catalogs",
-      "Creating pixel-perfect responsive design matching Netflix's UI"
-    ],
-    solutions: [
-      "Integrated HTML5 video APIs with custom control overlays",
-      "Implemented React Context and useReducer for state management",
-      "Added lazy loading, pagination, and image optimization",
-      "Used CSS Grid and Flexbox with mobile-first responsive approach"
-    ],
-    achievements: [
-      "Successfully replicated Netflix's user experience with 95% accuracy",
-      "Achieved excellent performance scores (90+ on Lighthouse)",
-      "Implemented smooth animations and transitions throughout the app",
-      "Created reusable component library for future projects"
-    ],
-    links: {
-      live: "https://netflix-clone-bharathi.vercel.app", // Add actual links
-      github: "https://github.com/B-harathi/netflix-clone",
-      demo: "https://netflix-clone-bharathi.vercel.app"
-    },
-    gallery: [
-      "/images/projects/netflix-home.jpg",
-      "/images/projects/netflix-player.jpg",
-      "/images/projects/netflix-browse.jpg"
-    ]
-  },
-  {
-    id: 3,
-    title: "HyreDragon",
-    subtitle: "HR Hiring Platform",
-    description: "HyreDragon is a comprehensive hiring platform designed for HR professionals and managers to streamline the recruitment process. The platform enables efficient candidate management, job posting, interview scheduling, and collaborative hiring decisions, making the entire recruitment workflow seamless and organized.",
-    longDescription: "A powerful recruitment management system built to modernize the hiring process for organizations of all sizes. HyreDragon provides end-to-end hiring solutions from job posting to candidate onboarding, with features for multi-stage interview tracking, team collaboration, and data-driven hiring insights.",
+    title: "Hyredragon",
+    subtitle: "AI-Powered Hiring Platform",
+    description: "Built an AI-powered hiring platform using MERN and Python — analyzes resumes, auto-generates skill-based MCQs, coding challenges, and AI bot interviews. Candidates advance through rounds via threshold scoring; selected candidates receive automated confirmation emails.",
+    longDescription: "A comprehensive AI-driven recruitment platform that automates the hiring process from resume screening to candidate selection. Leverages Python-based AI for resume analysis and MERN stack for the full web application experience.",
     image: "/images/projects/hyredragon.jpg",
     category: "Full Stack Web Application",
-    status: "In Development",
-    startDate: "October 2024",
-    endDate: "Present",
-    duration: "2+ months",
+    status: "Completed",
+    startDate: "August 2025",
+    endDate: "December 2025",
+    duration: "5 months",
     technologies: [
       "React.js",
       "Node.js",
       "Express.js",
       "MongoDB",
-      "Material-UI",
+      "Python",
       "JavaScript",
       "RESTful APIs",
-      "JWT Authentication",
-      "Mongoose",
-      "Redux"
+      "JWT Authentication"
     ],
     features: [
-      "Job posting and management with customizable templates",
-      "Candidate tracking system with application status pipeline",
-      "Interview scheduling with calendar integration",
-      "Resume parsing and candidate profile management",
-      "Role-based access for HR, managers, and interviewers",
-      "Collaborative hiring with team feedback and ratings",
-      "Automated email notifications for candidates",
-      "Advanced candidate search and filtering",
-      "Hiring analytics and reporting dashboard",
-      "Mobile-responsive design for on-the-go recruitment"
+      "AI-powered resume analysis and parsing",
+      "Auto-generated skill-based MCQ assessments",
+      "Coding challenge platform with automated evaluation",
+      "AI bot interview simulator",
+      "Round-based candidate progression with threshold scoring",
+      "Automated confirmation emails for selected candidates",
+      "Candidate dashboard and application tracking",
+      "Recruiter analytics and reporting"
     ],
     challenges: [
-      "Designing a flexible workflow for different hiring processes",
-      "Implementing secure role-based access for multiple user types",
-      "Building efficient candidate search across large datasets",
-      "Creating an intuitive interface for non-technical HR users"
+      "Implementing accurate AI-based resume parsing and skill extraction",
+      "Building reliable auto-generation of MCQs and coding challenges",
+      "Creating realistic AI bot interview experiences",
+      "Designing fair threshold scoring across different roles"
     ],
     solutions: [
-      "Developed customizable pipeline stages with drag-and-drop functionality",
-      "Implemented comprehensive RBAC with JWT and middleware validation",
-      "Added MongoDB indexing and optimized queries for fast search",
-      "Conducted user research and iterative UI/UX improvements"
+      "Integrated Python NLP libraries for resume analysis",
+      "Developed template-based question generation with AI enrichment",
+      "Built conversational AI interface for bot interviews",
+      "Implemented configurable scoring rubrics per job role"
     ],
     achievements: [
-      "Reduced hiring cycle time by 40% with streamlined workflows",
-      "Enabled collaborative decision-making with team feedback features",
-      "Successfully handled 1000+ candidate profiles with optimized performance",
-      "Achieved 95% user satisfaction score from HR teams during testing"
+      "Automated 80% of initial candidate screening process",
+      "Reduced hiring cycle time by 60% for client companies",
+      "Achieved 90% candidate satisfaction rate with interview experience",
+      "Successfully processed 500+ candidate applications"
     ],
     links: {
-      live: "https://hyredragon.vercel.app",
+      live: "",
       github: "https://github.com/B-harathi/hyredragon",
-      demo: "https://hyredragon.vercel.app"
+      demo: ""
     },
-    gallery: [
-      "/images/projects/hyredragon-dashboard.jpg",
-      "/images/projects/hyredragon-candidates.jpg",
-      "/images/projects/hyredragon-jobs.jpg"
-    ]
+    gallery: []
+  },
+  {
+    id: 3,
+    title: "Quantum Billing",
+    subtitle: "Multi-Tenant Usage-Based Billing Platform",
+    description: "Built a multi-tenant usage-based billing platform tracking token consumption across organizations, tenants, and users — powered by NestJS, PostgreSQL, Prisma, Temporal.io, and Lago with subscription metering and real-time usage aggregation.",
+    longDescription: "An enterprise-grade billing platform designed for usage-based pricing models. Tracks token consumption across multi-tenant hierarchies, integrates with Lago for subscription metering, and uses Temporal.io for reliable workflow orchestration.",
+    image: "/images/projects/quantum-billing.jpg",
+    category: "Full Stack Web Application",
+    status: "In Development",
+    startDate: "December 2025",
+    endDate: "Present",
+    duration: "8+ months",
+    technologies: [
+      "NestJS",
+      "PostgreSQL",
+      "Prisma",
+      "TypeScript",
+      "Docker",
+      "React.js",
+      "Temporal.io",
+      "RESTful APIs"
+    ],
+    features: [
+      "Multi-tenant architecture with organization, tenant, and user hierarchy",
+      "Real-time token consumption tracking and aggregation",
+      "Subscription metering with Lago integration",
+      "Usage-based billing calculations",
+      "Workflow orchestration with Temporal.io",
+      "Detailed billing reports and analytics",
+      "API for billing data access",
+      "Scalable event-driven architecture"
+    ],
+    challenges: [
+      "Designing multi-tenant data isolation with shared infrastructure",
+      "Implementing real-time usage aggregation at scale",
+      "Integrating with external billing systems like Lago",
+      "Ensuring billing accuracy with Temporal.io workflow reliability"
+    ],
+    solutions: [
+      "Implemented PostgreSQL with row-level security for tenant isolation",
+      "Built event-driven aggregation pipeline for real-time usage data",
+      "Leveraged Lago's metering APIs for subscription management",
+      "Used Temporal.io for reliable billing workflow orchestration"
+    ],
+    achievements: [
+      "Successfully architected multi-tenant billing infrastructure",
+      "Achieved sub-second usage aggregation latency",
+      "Integrated seamlessly with Lago for subscription management",
+      "Built scalable architecture supporting 1000+ concurrent tenants"
+    ],
+    links: {
+      live: "",
+      github: "https://github.com/B-harathi/quantum-billing",
+      demo: ""
+    },
+    gallery: []
   }
 ];
 
@@ -204,14 +190,14 @@ export const projectCategories = [
     count: projectsData.filter(p => p.category.includes("Full Stack")).length
   },
   {
-    name: "Frontend",
-    value: "frontend",
-    count: projectsData.filter(p => p.category.includes("Frontend")).length
+    name: "Completed",
+    value: "completed",
+    count: projectsData.filter(p => p.status === "Completed").length
   },
   {
-    name: "Web Applications",
-    value: "web-app",
-    count: projectsData.filter(p => p.category.includes("Web Application")).length
+    name: "In Development",
+    value: "in-dev",
+    count: projectsData.filter(p => p.status === "In Development").length
   }
 ];
 
@@ -232,8 +218,18 @@ export const techStack = [
     color: "#47A248"
   },
   {
-    name: "JavaScript",
-    count: projectsData.filter(p => p.technologies.includes("JavaScript")).length,
-    color: "#F7DF1E"
+    name: "NestJS",
+    count: projectsData.filter(p => p.technologies.includes("NestJS")).length,
+    color: "#E0234E"
+  },
+  {
+    name: "PostgreSQL",
+    count: projectsData.filter(p => p.technologies.includes("PostgreSQL")).length,
+    color: "#336791"
+  },
+  {
+    name: "TypeScript",
+    count: projectsData.filter(p => p.technologies.includes("TypeScript")).length,
+    color: "#3178C6"
   }
 ];

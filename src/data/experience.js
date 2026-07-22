@@ -1,18 +1,97 @@
 export const experienceData = [
   {
     id: 1,
+    title: "Software Developer",
+    company: "Pente AI",
+    location: "Coimbatore, India",
+    startDate: "December 2025",
+    endDate: "Present",
+    duration: "8+ months",
+    type: "Full-time",
+    description: "Evaluating and integrating open-source tools including Keycloak, Lago, and Meteroid. Building across MERN, Next.js, NestJS, and PostgreSQL with Docker-based deployments across environments.",
+    responsibilities: [
+      "Evaluated and integrated open-source tools including Keycloak, Lago, and Meteroid",
+      "Built across MERN, Next.js, NestJS, and PostgreSQL stacks",
+      "Designed ERD diagrams and wrote optimized PostgreSQL scripts (migrations, indexing)",
+      "Managed Docker-based deployments across environments",
+      "Integrated third-party APIs and prototyped UIs using Lovable",
+      "Applied advanced prompt engineering for AI-assisted development workflows"
+    ],
+    technologies: [
+      "React.js",
+      "Next.js",
+      "NestJS",
+      "PostgreSQL",
+      "Prisma",
+      "Docker",
+      "Keycloak",
+      "MongoDB",
+      "JavaScript",
+      "TypeScript"
+    ],
+    achievements: [
+      "Successfully integrated Keycloak for authentication and authorization",
+      "Optimized PostgreSQL queries with proper indexing strategies",
+      "Streamlined Docker-based CI/CD workflows across environments",
+      "Reduced development time through effective prompt engineering techniques"
+    ],
+    companyInfo: {
+      industry: "AI / Technology",
+      description: "An innovative AI company focused on building cutting-edge solutions using modern technologies and open-source ecosystems."
+    }
+  },
+  {
+    id: 2,
+    title: "Software Associate",
+    company: "SNS Ihub",
+    location: "Coimbatore, India",
+    startDate: "August 2025",
+    endDate: "December 2025",
+    duration: "5 months",
+    type: "Full-time",
+    description: "Developed full-stack features across MERN, Python, and AI-assisted workflows within a microservice-based architecture. Integrated third-party UI component libraries and containerized services using Docker.",
+    responsibilities: [
+      "Developed full-stack features across MERN, Python, and AI-assisted workflows",
+      "Built within a microservice-based architecture",
+      "Integrated third-party UI component libraries",
+      "Containerized services using Docker for consistent dev/prod environments",
+      "Explored agentic AI concepts and multi-agent workflow patterns",
+      "Supported automation initiatives through AI-driven approaches"
+    ],
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Python",
+      "Docker",
+      "JavaScript",
+      "RESTful APIs"
+    ],
+    achievements: [
+      "Successfully delivered full-stack features in microservice architecture",
+      "Improved development consistency with Docker containerization",
+      "Pioneered AI-assisted workflow automation initiatives"
+    ],
+    companyInfo: {
+      industry: "Technology Services",
+      description: "A leading technology solutions provider focused on innovative software development and digital transformation."
+    }
+  },
+  {
+    id: 3,
     title: "Junior Software Associate",
     company: "SNS Ihub",
     location: "Coimbatore, India",
     startDate: "August 2024",
-    endDate: "Present",
-    duration: "6+ months",
+    endDate: "August 2025",
+    duration: "12 months",
     type: "Full-time",
-    description: "Working across backend and frontend development, integrating RESTful and third-party APIs to build scalable web applications. Gained hands-on experience in full-stack development, ensuring seamless integration between systems, efficient data handling, and responsive user interfaces.",
+    description: "Built and maintained full-stack applications using React, Node.js, Express.js, and MongoDB, delivering production-ready features across Agile sprints. Integrated REST APIs and third-party services.",
     responsibilities: [
-      "Developed and maintained full-stack web applications using MERN stack technologies",
+      "Built and maintained full-stack web applications using MERN stack technologies",
       "Integrated RESTful APIs and third-party services for seamless data flow",
-      "Collaborated with cross-functional teams using Agile methodologies",
+      "Collaborated in Scrum ceremonies — sprint planning, standups, and retrospectives",
       "Implemented responsive user interfaces with React.js and modern CSS frameworks",
       "Optimized application performance and ensured code quality through testing",
       "Participated in code reviews and maintained clean, scalable codebases"
@@ -29,74 +108,33 @@ export const experienceData = [
       "RESTful APIs"
     ],
     achievements: [
-      "Successfully delivered multiple web applications within tight deadlines",
+      "Successfully delivered production-ready features across Agile sprints",
       "Improved application performance by 25% through code optimization",
-      "Mentored junior developers and contributed to team knowledge sharing",
-      "Implemented automated testing processes that reduced bugs by 30%"
+      "Improved system reliability through effective API integrations",
+      "Ensured on-time task delivery through effective sprint participation"
     ],
     companyInfo: {
       industry: "Technology Services",
       description: "A leading technology solutions provider focused on innovative software development and digital transformation."
-    }
-  },
-  {
-    id: 2,
-    title: "Digital Marketing Intern",
-    company: "The Reciprocal Solutions",
-    location: "Coimbatore, India",
-    startDate: "March 2023",
-    endDate: "August 2023",
-    duration: "6 months",
-    type: "Internship",
-    description: "Engaged as a Digital Marketing Intern for six months, specializing in SEO strategies, Google Ads management, campaign optimization, and keyword research. Applied theoretical knowledge to real-world projects, gaining practical experience and honing digital marketing skills.",
-    responsibilities: [
-      "Developed and implemented comprehensive SEO strategies for client websites",
-      "Managed Google Ads campaigns with focus on ROI optimization",
-      "Conducted extensive keyword research and competitive analysis",
-      "Created and optimized content for improved search engine rankings",
-      "Analyzed campaign performance metrics and prepared detailed reports",
-      "Collaborated with design team to create compelling ad creatives"
-    ],
-    technologies: [
-      "Google Analytics",
-      "Google Ads",
-      "SEMrush",
-      "Ahrefs",
-      "Google Search Console",
-      "Facebook Ads Manager",
-      "WordPress",
-      "Canva",
-      "Microsoft Excel"
-    ],
-    achievements: [
-      "Increased organic traffic by 40% for key client websites through SEO optimization",
-      "Achieved 25% improvement in Google Ads click-through rates",
-      "Successfully managed campaigns with budgets exceeding ₹2 lakhs",
-      "Reduced cost-per-click by 30% through strategic keyword optimization",
-      "Created comprehensive SEO audit reports for 15+ client websites"
-    ],
-    companyInfo: {
-      industry: "Digital Marketing",
-      description: "A digital marketing agency specializing in SEO, PPC, social media marketing, and comprehensive digital strategies for businesses."
     }
   }
 ];
 
 export const workTimeline = [
   {
-    year: "2024",
-    title: "Career Growth",
-    description: "Transitioned to full-stack development role, expanding technical expertise in MERN stack technologies."
+    year: "2025 - Present",
+    title: "Software Developer",
+    description: "Working at Pente AI, building fintech and billing solutions with React, Next.js, NestJS, and PostgreSQL."
   },
   {
-    year: "2023",
-    title: "Professional Start",
-    description: "Began professional journey with digital marketing internship, gaining valuable industry experience."
+    year: "2024 - 2025",
+    title: "Full-Stack Growth",
+    description: "Progressed from Junior Software Associate to Software Associate at SNS Ihub, expanding expertise in MERN, Python, Docker, and AI-assisted workflows."
   },
   {
     year: "2020-2024",
     title: "Education",
-    description: "Completed Bachelor's degree in Computer Science and Engineering, building strong technical foundation."
+    description: "Completed BE in Computer Science and Engineering (CGPA: 8.75), building strong technical foundation."
   }
 ];
 
@@ -107,18 +145,18 @@ export const careerStats = [
     description: "Professional software development"
   },
   {
-    number: "2+",
+    number: "3+",
     label: "Projects Completed",
     description: "Full-stack web applications"
   },
   {
-    number: "2+",
-    label: "Technologies Mastered",
+    number: "15+",
+    label: "Technologies",
     description: "Modern web technologies"
   },
   {
-    number: "0.6+",
-    label: "Intership Completed",
-    description: "Digital Marketing"
+    number: "3",
+    label: "Roles Held",
+    description: "Across 2 organizations"
   },
 ];

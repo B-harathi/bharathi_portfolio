@@ -44,7 +44,7 @@ function App() {
   // Refresh AOS on route change
   useEffect(() => {
     AOS.refresh();
-  });
+  }, []);
 
   if (loading) {
     return <LoadingSpinner />;
