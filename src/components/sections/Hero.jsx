@@ -2,7 +2,6 @@ import React, { useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { FaDownload, FaArrowRight, FaLinkedinIn, FaGithub, FaEnvelope } from 'react-icons/fa';
 import { personalInfo } from '../../data/personal';
-import AccessLog from '../ui/AccessLog';
 
 const Hero = () => {
   const downloadResume = useCallback(() => {
@@ -37,11 +36,9 @@ const Hero = () => {
 
       <div className="container-custom section-padding relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Left: signature console + identity */}
+          {/* Left: identity */}
           <div className="lg:col-span-7" data-aos="fade-up">
-            <AccessLog />
-
-            <div className="mt-10">
+            <div>
               <p className="eyebrow mb-5">full-stack developer</p>
               <h1 className="heading-primary mb-4">
                 <span className="block" style={{ color: 'var(--signal-white)' }}>{personalInfo.name}</span>
