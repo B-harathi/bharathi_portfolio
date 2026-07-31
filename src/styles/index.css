@@ -1062,6 +1062,9 @@ section + section { border-top: 1px solid var(--wire); }
   color: var(--signal-white);
   white-space: nowrap;
   font-size: 0.8125rem;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .skill-leader {
   flex: 1;
@@ -1216,6 +1219,33 @@ section + section { border-top: 1px solid var(--wire); }
 .photo-status b {
   color: var(--grant-amber);
   font-weight: 600;
+}
+
+/* ---- 5e. Mobile responsiveness ---- */
+@media (max-width: 640px) {
+  /* Let log/terminal lines wrap so they're fully visible on small screens */
+  .access-console__line {
+    flex-wrap: wrap;
+    white-space: normal;
+    gap: 0.15rem 0.75rem;
+  }
+  .access-console__line > span {
+    white-space: normal;
+  }
+  .access-console__body {
+    overflow-x: hidden;
+  }
+
+  /* Skills manifest: keep rows inside their card */
+  .skill-row {
+    gap: 0.5rem;
+  }
+  .skill-leader {
+    min-width: 0.5rem;
+  }
+  .skill-track {
+    width: 96px !important;
+  }
 }
 
 /* ---- 6. Remap leftover light-only utilities to the ink theme ---- */
