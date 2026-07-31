@@ -8,6 +8,7 @@ import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import ScrollToTop from './components/common/ScrollTop';
 import LoadingSpinner from './components/common/LoadingSpinner';
+import ScrollProgress from './components/ui/ScrollProgress';
 
 // Pages
 import Home from './pages/Home';
@@ -24,19 +25,28 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Initialize AOS
+    // Force the dark "access log" theme (design is dark-only)
+    const root = document.documentElement;
+    root.classList.add('dark');
+    root.style.colorScheme = 'dark';
+
+    // Initialize AOS per the design system motion spec:
+    // fade + rise 12px, 400ms, ease-out, once per section.
+    // Disable entirely when the user prefers reduced motion.
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     AOS.init({
-      duration: 1000,
+      duration: 400,
       easing: 'ease-out-cubic',
       once: true,
-      offset: 100,
+      offset: 80,
       delay: 0,
+      disable: () => reducedMotion,
     });
 
-    // Simulate loading time
+    // Brief boot so the access-log hero is the first thing seen
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 900);
 
     return () => clearTimeout(timer);
   }, []);
@@ -52,7 +62,8 @@ function App() {
 
   return (
     <Router>
-      <div className="App min-h-screen bg-gray-50">
+      <div className="App min-h-screen bg-transparent">
+        <ScrollProgress />
         <Navbar />
         <main className="flex-grow">
           <Routes>

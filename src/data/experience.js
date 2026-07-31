@@ -15,7 +15,10 @@ export const experienceData = [
       "Designed ERD diagrams and wrote optimized PostgreSQL scripts (migrations, indexing)",
       "Managed Docker-based deployments across environments",
       "Integrated third-party APIs and prototyped UIs using Lovable",
-      "Applied advanced prompt engineering for AI-assisted development workflows"
+      "Applied advanced prompt engineering for AI-assisted development workflows",
+      "Wrote and maintained unit tests (Jest) to keep critical flows regression-free",
+      "Used SonarQube to track and improve code quality and test coverage",
+      "Explored Temporal for durable, resumable workflow orchestration"
     ],
     technologies: [
       "React.js",
@@ -25,6 +28,9 @@ export const experienceData = [
       "Prisma",
       "Docker",
       "Keycloak",
+      "Temporal",
+      "SonarQube",
+      "Jest",
       "MongoDB",
       "JavaScript",
       "TypeScript"
@@ -33,7 +39,8 @@ export const experienceData = [
       "Successfully integrated Keycloak for authentication and authorization",
       "Optimized PostgreSQL queries with proper indexing strategies",
       "Streamlined Docker-based CI/CD workflows across environments",
-      "Reduced development time through effective prompt engineering techniques"
+      "Reduced development time through effective prompt engineering techniques",
+      "Improved code quality via SonarQube-driven cleanup and unit-test coverage"
     ],
     companyInfo: {
       industry: "AI / Technology",
@@ -105,6 +112,7 @@ export const experienceData = [
       "HTML5",
       "CSS3",
       "Git",
+      "Jest",
       "RESTful APIs"
     ],
     achievements: [
@@ -140,7 +148,7 @@ export const workTimeline = [
 
 export const careerStats = [
   {
-    number: "1+",
+    number: "2",
     label: "Years Experience",
     description: "Professional software development"
   },

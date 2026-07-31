@@ -112,6 +112,20 @@ export const skillsData = {
           icon: "SiPrisma",
           color: "#2D3748",
           description: "Next-generation ORM for Node.js and TypeScript with type-safe queries"
+        },
+        {
+          name: "Keycloak",
+          level: 68,
+          icon: "FaKey",
+          color: "#26B2B2",
+          description: "OIDC/SAML identity and access management — SSO, authorization, and role-based access control"
+        },
+        {
+          name: "Temporal",
+          level: 60,
+          icon: "FaRegClock",
+          color: "#6E5CE6",
+          description: "Durable workflow orchestration for reliable, resumable background processes"
         }
       ]
     },
@@ -152,6 +166,20 @@ export const skillsData = {
           icon: "FaGithub",
           color: "#4078C0",
           description: "AI-assisted development with prompt engineering and code generation"
+        },
+        {
+          name: "SonarQube",
+          level: 70,
+          icon: "FaBug",
+          color: "#4E9BCD",
+          description: "Continuous code quality and security analysis — bugs, code smells, and coverage"
+        },
+        {
+          name: "Unit Testing",
+          level: 78,
+          icon: "FaFlask",
+          color: "#66BB6A",
+          description: "Writing and maintaining unit tests (Jest) to keep critical flows regression-free"
         }
       ]
     },

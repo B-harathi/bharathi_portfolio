@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaArrowRight, FaGraduationCap, FaBriefcase, FaHeart } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
 import { personalInfo } from '../../data/personal';
 import SectionHeading from '../ui/SectionHeading';
 
@@ -8,143 +8,153 @@ const AboutSection = ({ preview = false }) => {
   const softSkillsPreview = personalInfo.softSkills.slice(0, 4);
   const interestsPreview = personalInfo.interests.slice(0, 6);
 
+  const facts = [
+    { key: 'role', value: personalInfo.title },
+    { key: 'location', value: personalInfo.location },
+    { key: 'experience', value: '2 years' },
+    { key: 'focus', value: 'fintech · billing systems' },
+    { key: 'stack', value: 'mern · nest · postgres · docker' },
+    { key: 'status', value: 'open to opportunities' },
+  ];
+
   return (
-    <section className={`section-padding bg-white ${preview ? '' : 'pt-24'}`}>
+    <section className={`section-padding ${preview ? '' : 'pt-24'}`} style={{ backgroundColor: 'var(--surface-panel)' }}>
       <div className="container-custom">
         <SectionHeading
-          subtitle="Get To Know Me"
+          subtitle="About"
           title="About Me"
-          description={preview ? "A passionate developer with a love for creating innovative solutions" : ""}
+          description={preview ? "A profile of the engineer behind the console" : "The engineer behind the console — a quick system dump."}
           className="mb-16"
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div data-aos="fade-right">
-            {/* Main Description */}
-            <div className="space-y-6">
-              <p className="text-lg text-gray-700 leading-relaxed">
-                {personalInfo.bio.long}
-              </p>
-              
-              {!preview && (
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  {personalInfo.bio.passion}
-                </p>
-              )}
-
-              {/* Key Stats */}
-              <div className="grid grid-cols-2 gap-6 my-8">
-                <div className="text-center lg:text-left">
-                  <div className="flex items-center justify-center lg:justify-start mb-2">
-                    <FaBriefcase className="text-primary-600 w-6 h-6 mr-2" />
-                    <span className="text-2xl font-bold gradient-text">1+</span>
-                  </div>
-                  <p className="text-gray-600">Years of Experience</p>
-                </div>
-                
-                <div className="text-center lg:text-left">
-                  <div className="flex items-center justify-center lg:justify-start mb-2">
-                    <FaGraduationCap className="text-primary-600 w-6 h-6 mr-2" />
-                    <span className="text-2xl font-bold gradient-text">8.75</span>
-                  </div>
-                  <p className="text-gray-600">CGPA in Engineering</p>
-                </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          {/* Left: bio inside a terminal window */}
+          <div className="access-console" data-aos="fade-up">
+            <div className="access-console__bar">
+              <div className="access-console__dots" aria-hidden="true">
+                <span></span><span></span><span></span>
               </div>
-
-              {/* CTA Button for preview */}
-              {preview && (
-                <Link
-                  to="/about"
-                  className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium group"
-                >
-                  Learn more about me
-                  <FaArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                </Link>
-              )}
+              <span className="access-console__title">~/about.md</span>
+            </div>
+            <div className="access-console__body">
+              <p className="access-log-dim mb-3" style={{ fontFamily: 'var(--font-mono)' }}>
+                {'$ cat ~/about.md'}
+              </p>
+              <div className="space-y-4">
+                <p style={{ color: 'var(--signal-white)' }} className="text-base leading-relaxed">
+                  {personalInfo.bio.long}
+                </p>
+                {!preview && (
+                  <p style={{ color: 'var(--signal-white)' }} className="text-base leading-relaxed">
+                    {personalInfo.bio.passion}
+                  </p>
+                )}
+              </div>
             </div>
           </div>
 
-          {/* Right Content */}
-          <div data-aos="fade-left">
-            {/* Soft Skills */}
-            <div className="card p-6 mb-6">
-              <h3 className="heading-tertiary mb-6 flex items-center">
-                <FaHeart className="text-red-500 w-5 h-5 mr-2" />
-                What I'm Passionate About
-              </h3>
-              <div className="grid grid-cols-2 gap-4">
-                {(preview ? softSkillsPreview : personalInfo.softSkills).map((skill, index) => (
-                  <div key={index} className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-gradient-to-r from-primary-600 to-purple-600 rounded-full"></div>
-                    <span className="text-gray-700 text-sm">{skill.name}</span>
+          {/* Right: key-value profile + soft skills + interests */}
+          <div data-aos="fade-up" data-aos-delay="120">
+            <div className="card p-6 lg:p-8" style={{ fontFamily: 'var(--font-mono)' }}>
+              <p className="access-log-dim mb-4">{'$ cat ~/profile.json'}</p>
+
+              <div className="space-y-2">
+                {facts.map((f, i) => (
+                  <div key={i} className="flex items-baseline gap-4 text-sm">
+                    <span className="access-log-dim flex-shrink-0 w-28">{`"${f.key}":`}</span>
+                    <span className="access-log-allowed break-words">{f.value}</span>
                   </div>
                 ))}
               </div>
-            </div>
 
-            {/* Interests */}
-            <div className="card p-6">
-              <h3 className="heading-tertiary mb-6">Interests & Technologies</h3>
-              <div className="flex flex-wrap gap-2">
-                {(preview ? interestsPreview : personalInfo.interests).map((interest, index) => (
-                  <span
-                    key={index}
-                    className="px-3 py-1 bg-gradient-to-r from-primary-100 to-purple-100 text-primary-700 rounded-full text-sm font-medium"
-                  >
-                    {interest}
-                  </span>
-                ))}
+              {/* Soft skills */}
+              <div className="mt-6 pt-6" style={{ borderTop: '1px solid var(--wire)' }}>
+                <p className="access-log-dim mb-3">{'$ soft_skills'}</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {(preview ? softSkillsPreview : personalInfo.softSkills).map((skill, i) => (
+                    <div key={i} className="flex items-center gap-2 text-sm" style={{ color: 'var(--signal-white)' }}>
+                      <span className="skill-dot" style={{ backgroundColor: 'var(--grant-amber)' }} aria-hidden="true" />
+                      {skill.name}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Interests */}
+              <div className="mt-6 pt-6" style={{ borderTop: '1px solid var(--wire)' }}>
+                <p className="access-log-dim mb-3">{'$ interests'}</p>
+                <div className="flex flex-wrap gap-2">
+                  {(preview ? interestsPreview : personalInfo.interests).map((interest, i) => (
+                    <span key={i} className="tag-pill">{interest}</span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Education Section (only show in full about page) */}
+        {/* Education as a log */}
         {!preview && (
           <div className="mt-16" data-aos="fade-up">
-            <h3 className="heading-tertiary text-center mb-12">Education</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {personalInfo.education.map((edu, index) => (
-                <div key={index} className="card p-6 text-center">
-                  <div className="w-12 h-12 bg-gradient-to-r from-primary-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <FaGraduationCap className="text-white w-6 h-6" />
+            <h3 className="heading-tertiary text-center mb-10">
+              <span className="access-log-dim">history</span> · education
+            </h3>
+            <div className="access-console">
+              <div className="access-console__bar">
+                <div className="access-console__dots" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+                <span className="access-console__title">education.log</span>
+              </div>
+              <div className="access-console__body">
+                <p className="access-log-dim mb-3">{'$ history --education'}</p>
+                <div className="space-y-4">
+                  {personalInfo.education.map((edu, i) => (
+                    <div key={i} className="skill-row">
+                      <span className="access-log-dim">{`#${i + 1}`}</span>
+                      <div className="flex-1 min-w-0">
+                        <p style={{ color: 'var(--signal-white)' }} className="text-sm">{edu.degree}</p>
+                        <p className="access-log-dim text-sm">{edu.institution} · {edu.location}</p>
+                      </div>
+                      <div className="text-right flex-shrink-0">
+                        <p className="access-log-allowed text-sm">{edu.cgpa || edu.percentage}</p>
+                        <p className="access-log-dim text-sm">{edu.year}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Languages */}
+        {!preview && (
+          <div className="mt-16" data-aos="fade-up">
+            <h3 className="heading-tertiary text-center mb-10">languages</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+              {personalInfo.languages.map((lang, i) => (
+                <div key={i} className="card p-6" style={{ fontFamily: 'var(--font-mono)' }}>
+                  <div className="flex items-baseline justify-between gap-4 mb-3">
+                    <span style={{ color: 'var(--signal-white)' }} className="uppercase tracking-wider text-sm">
+                      {lang.name}
+                    </span>
+                    <span className="access-log-allowed text-sm uppercase">{lang.proficiency}</span>
                   </div>
-                  <h4 className="text-xl font-semibold text-gray-900 mb-2">{edu.degree}</h4>
-                  <p className="text-primary-600 font-medium mb-1">{edu.institution}</p>
-                  <p className="text-gray-600 text-sm mb-2">{edu.location} • {edu.year}</p>
-                  <p className="text-lg font-bold gradient-text mb-3">
-                    {edu.cgpa || edu.percentage}
-                  </p>
-                  <p className="text-gray-600 text-sm">{edu.description}</p>
+                  <p className="access-log-dim text-sm">{lang.skills.join(' · ')}</p>
                 </div>
               ))}
             </div>
           </div>
         )}
 
-        {/* Languages Section (only show in full about page) */}
-        {!preview && (
-          <div className="mt-16" data-aos="fade-up">
-            <h3 className="heading-tertiary text-center mb-12">Languages</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-              {personalInfo.languages.map((language, index) => (
-                <div key={index} className="card p-6 text-center">
-                  <h4 className="text-xl font-semibold text-gray-900 mb-2">{language.name}</h4>
-                  <p className="text-primary-600 font-medium mb-3">{language.proficiency}</p>
-                  <div className="flex justify-center space-x-4">
-                    {language.skills.map((skill, skillIndex) => (
-                      <span
-                        key={skillIndex}
-                        className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-sm"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
+        {/* CTA for preview */}
+        {preview && (
+          <div className="text-center mt-12" data-aos="fade-up">
+            <Link to="/about" className="btn-primary group">
+              Read the full profile
+              <FaArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+            </Link>
           </div>
         )}
       </div>

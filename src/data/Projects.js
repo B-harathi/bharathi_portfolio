@@ -20,7 +20,8 @@ export const projectsData = [
       "JavaScript",
       "RESTful APIs",
       "JWT Authentication",
-      "Mongoose"
+      "Mongoose",
+      "Unit Testing"
     ],
     features: [
       "Complete invoice management system with automated generation",

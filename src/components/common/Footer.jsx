@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaLinkedinIn, FaGithub, FaEnvelope, FaPhone, FaHeart, FaArrowUp } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub, FaEnvelope, FaPhone, FaArrowUp, FaMapMarkerAlt } from 'react-icons/fa';
 import { personalInfo } from '../../data/personal';
 
 const Footer = () => {
@@ -34,22 +34,25 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer style={{ backgroundColor: 'var(--bg-void)', borderTop: '1px solid var(--wire)' }} data-aos="fade-up">
       {/* Main Footer Content */}
       <div className="container-custom section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Section */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-r from-primary-600 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold">
+              <div
+                className="w-10 h-10 rounded-lg flex items-center justify-center font-bold"
+                style={{ backgroundColor: 'var(--grant-amber)', color: 'var(--bg-void)' }}
+              >
                 BG
               </div>
               <div>
-                <h3 className="text-xl font-bold">{personalInfo.name}</h3>
-                <p className="text-gray-400 text-sm">{personalInfo.subtitle}</p>
+                <h3 className="text-xl font-bold" style={{ color: 'var(--signal-white)' }}>{personalInfo.name}</h3>
+                <p className="text-sm" style={{ color: 'var(--wire-grey)' }}>{personalInfo.subtitle}</p>
               </div>
             </div>
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-sm leading-relaxed" style={{ color: 'var(--wire-grey)' }}>
               {personalInfo.bio.short}
             </p>
             <div className="flex space-x-4">
@@ -57,7 +60,7 @@ const Footer = () => {
                 <button
                   key={index}
                   onClick={() => handleSocialClick(social.url)}
-                  className="social-icon bg-gray-800 hover:bg-gradient-to-r hover:from-primary-500 hover:to-purple-500"
+                  className="social-icon"
                   aria-label={social.name}
                 >
                   {social.icon === 'FaLinkedinIn' && <FaLinkedinIn />}
@@ -71,7 +74,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-white">Quick Links</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wider" style={{ color: 'var(--grant-amber)', fontFamily: 'var(--font-mono)' }}>Quick Links</h4>
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -105,7 +108,7 @@ const Footer = () => {
 
           {/* Services */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-white">Services</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wider" style={{ color: 'var(--grant-amber)', fontFamily: 'var(--font-mono)' }}>Services</h4>
             <ul className="space-y-2">
               {services.map((service, index) => (
                 <li key={index} className="text-gray-300 py-1">
@@ -117,7 +120,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-white">Get In Touch</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wider" style={{ color: 'var(--grant-amber)', fontFamily: 'var(--font-mono)' }}>Get In Touch</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <FaEnvelope className="text-primary-400 w-4 h-4" />
@@ -137,8 +140,8 @@ const Footer = () => {
                   +91 {personalInfo.phone}
                 </a>
               </div>
-              <div className="flex items-start space-x-3">
-                <div className="text-primary-400 w-4 h-4 mt-1">📍</div>
+              <div className="flex items-center space-x-3">
+                <FaMapMarkerAlt className="text-primary-400 w-4 h-4" />
                 <span className="text-gray-300 text-sm">
                   {personalInfo.location}
                 </span>
@@ -148,7 +151,7 @@ const Footer = () => {
             {/* Back to Top */}
             <button
               onClick={scrollToTop}
-              className="mt-6 btn-secondary text-sm py-2 px-4 border-gray-600 text-gray-300 hover:border-primary-500 hover:text-primary-400"
+              className="mt-6 btn-secondary text-sm py-2 px-4"
             >
               <FaArrowUp className="w-3 h-3 mr-2" />
               Back to Top
@@ -158,16 +161,14 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-gray-800">
+      <div style={{ borderTop: '1px solid var(--wire)' }}>
         <div className="container-custom px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-            <div className="text-gray-400 text-sm text-center md:text-left">
-              © {currentYear} {personalInfo.name}. All rights reserved.
+          <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0" style={{ fontFamily: 'var(--font-mono)' }}>
+            <div className="text-sm text-center md:text-left" style={{ color: 'var(--wire-grey)' }}>
+              © {currentYear} {personalInfo.name}. all rights reserved.
             </div>
-            <div className="flex items-center space-x-1 text-gray-400 text-sm">
-              <span>Made with</span>
-              <FaHeart className="text-red-500 w-4 h-4" />
-              <span>using React.js & Tailwind CSS</span>
+            <div className="flex items-center space-x-1 text-sm" style={{ color: 'var(--wire-grey)' }}>
+              <span>{'// styled as an access log'}</span>
             </div>
           </div>
         </div>

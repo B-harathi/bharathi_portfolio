@@ -11,7 +11,11 @@ import {
   FaTools,
   FaCode,
   FaDocker,
-  FaGithub
+  FaGithub,
+  FaKey,
+  FaRegClock,
+  FaBug,
+  FaFlask
 } from 'react-icons/fa';
 import { 
   SiMongodb, 
@@ -68,6 +72,12 @@ const TechIcon = ({ iconName, size = "w-8 h-8", color, className = "" }) => {
     FaDocker: <FaDocker {...iconProps} />,
     FaGithub: <FaGithub {...iconProps} />,
 
+    // Security · workflows · quality · testing
+    FaKey: <FaKey {...iconProps} />,
+    FaRegClock: <FaRegClock {...iconProps} />,
+    FaBug: <FaBug {...iconProps} />,
+    FaFlask: <FaFlask {...iconProps} />,
+
     // New technical skills
     SiTypescript: <SiTypescript {...iconProps} />,
     SiSocketdotio: <SiSocketdotio {...iconProps} />,
@@ -112,6 +122,12 @@ export const techStackData = {
   'Postman': { icon: 'SiPostman', color: '#FF6C37', name: 'Postman' },
   'Docker': { icon: 'FaDocker', color: '#2496ED', name: 'Docker' },
   'GitHub Copilot': { icon: 'FaGithub', color: '#4078C0', name: 'GitHub Copilot' },
+
+  // Security · workflows · quality · testing
+  'Keycloak': { icon: 'FaKey', color: '#26B2B2', name: 'Keycloak' },
+  'Temporal': { icon: 'FaRegClock', color: '#6E5CE6', name: 'Temporal' },
+  'SonarQube': { icon: 'FaBug', color: '#4E9BCD', name: 'SonarQube' },
+  'Unit Testing': { icon: 'FaFlask', color: '#66BB6A', name: 'Unit Testing' },
 
   // New technical skills
   'TypeScript': { icon: 'SiTypescript', color: '#3178C6', name: 'TypeScript' },

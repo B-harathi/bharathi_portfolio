@@ -8,7 +8,7 @@
 
 ## Profile
 
-Full-stack developer with 1+ year of experience in fintech and billing systems using React, Next.js, Node.js, Express, and MongoDB. Delivered real-time features and REST API integrations in Agile environments. Expanding into NestJS, PostgreSQL, and Docker. Focused on clean architecture and production-ready code.
+Full-stack developer with 2 years of experience in fintech and billing systems using React, Next.js, Node.js, Express, and MongoDB. Delivered real-time features and REST API integrations in Agile environments. Expanding into NestJS, PostgreSQL, and Docker. Focused on clean architecture and production-ready code.
 
 ---
 

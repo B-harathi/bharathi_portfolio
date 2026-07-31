@@ -7,11 +7,11 @@ export const personalInfo = {
   location: "Coimbatore, India",
   linkedin: "http://linkedin.com/in/gbharathi",
   github: "https://github.com/B-harathi",
-  resume: "/resume/Bharathi_Resume.md",
+  resume: "/resume/Bharathi_G_Resume.pdf",
   
   bio: {
-    short: "Full-stack developer with 1+ year of experience in fintech and billing systems using React, Next.js, Node.js, Express, and MongoDB. Delivered real-time features and REST API integrations in Agile environments.",
-    long: "I'm a full-stack developer with 1+ year of experience building scalable web applications in fintech and billing systems. My expertise spans React, Next.js, Node.js, Express, and MongoDB, with growing skills in NestJS, PostgreSQL, and Docker. I'm focused on clean architecture and production-ready code.",
+    short: "Full-stack developer with 2 years of experience in fintech and billing systems using React, Next.js, Node.js, Express, and MongoDB. Delivered real-time features and REST API integrations in Agile environments.",
+    long: "I'm a full-stack developer with 2 years of experience building scalable web applications in fintech and billing systems. My expertise spans React, Next.js, Node.js, Express, and MongoDB, with growing skills in NestJS, PostgreSQL, and Docker. I'm focused on clean architecture and production-ready code.",
     passion: "I love turning complex problems into simple, beautiful, and intuitive solutions. When I'm not coding, you'll find me exploring new technologies, expanding into NestJS and PostgreSQL, or learning about the latest trends in fintech and billing systems."
   },
 

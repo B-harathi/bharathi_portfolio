@@ -108,10 +108,11 @@ const CertificationsSection = () => {
                 </button>
                 <button
                   onClick={() => handleVerification(cert.verificationUrl)}
-                  className="flex-1 btn-outline text-xs py-2"
+                  disabled={!cert.verificationUrl}
+                  className={`flex-1 text-xs py-2 ${cert.verificationUrl ? 'btn-outline' : 'bg-gray-100 text-gray-400 rounded-lg cursor-not-allowed'}`}
                 >
                   <FaExternalLinkAlt className="w-3 h-3 mr-1" />
-                  Verify
+                  {cert.verificationUrl ? 'Verify' : 'N/A'}
                 </button>
               </div>
             </div>

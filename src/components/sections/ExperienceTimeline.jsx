@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt, FaAward, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { experienceData, careerStats } from '../../data/experience';
 import SectionHeading from '../ui/SectionHeading';
+import StatePill from '../ui/StatePill';
+
+const expState = (exp) =>
+  exp.endDate === 'Present' ? { state: 'running', label: 'ACTIVE' } : { state: 'completed', label: 'COMPLETED' };
 
 const ExperienceTimeline = ({ preview = false }) => {
   const [expandedExperience, setExpandedExperience] = useState(null);
@@ -38,7 +42,7 @@ const ExperienceTimeline = ({ preview = false }) => {
         {/* Experience Timeline */}
         <div className="relative">
           {/* Timeline Line */}
-          <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-gradient-to-b from-primary-600 to-purple-600 rounded-full"></div>
+          <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-px h-full rounded-full" style={{ backgroundColor: 'var(--wire)' }}></div>
 
           <div className="space-y-12">
             {experiences.map((exp, index) => (
@@ -51,7 +55,7 @@ const ExperienceTimeline = ({ preview = false }) => {
                 data-aos-delay={index * 200}
               >
                 {/* Timeline Node */}
-                <div className="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-r from-primary-600 to-purple-600 rounded-full border-4 border-white shadow-lg z-10"></div>
+                <div className="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full border-4 z-10" style={{ backgroundColor: 'var(--grant-amber)', borderColor: 'var(--bg-void)', boxShadow: '0 0 0 1px var(--wire)' }}></div>
 
                 {/* Content Card */}
                 <div className={`w-full md:w-1/2 ml-16 md:ml-0 ${
@@ -65,13 +69,7 @@ const ExperienceTimeline = ({ preview = false }) => {
                           <FaBriefcase className="text-white w-6 h-6" />
                         </div>
                         <div>
-                          <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                            exp.type === 'Full-time' 
-                              ? 'bg-green-100 text-green-700' 
-                              : 'bg-blue-100 text-blue-700'
-                          }`}>
-                            {exp.type}
-                          </span>
+                          <StatePill {...expState(exp)} />
                         </div>
                       </div>
                       <div className="text-right">
